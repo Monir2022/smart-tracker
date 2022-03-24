@@ -15,8 +15,16 @@
   height: auto;
   border-radius: 100%;
 }
-nav Link {
-  background-color: brown;
+
+
+.links {  
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.links:hover {
+  color: rgb(245, 236, 240);
+  background-color: rgb(19, 19, 19);
+  text-decoration: underline;
 }
