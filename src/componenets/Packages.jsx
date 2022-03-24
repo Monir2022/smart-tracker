@@ -7,7 +7,10 @@ export default function Packages({ parcels }) {
     </ul>
   ));
 
-  return <div className="packages">
-    
-    {parcelInfo}</div>;
+  return (
+    <div className="packages">
+      <h2 className="heading-packages">Here are your packages</h2>
+      {parcelInfo}
+    </div>
+  );
 }

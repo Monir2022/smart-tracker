@@ -1,15 +1,18 @@
 .packages {
-    
-    
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-top: 8rem;
 }
 
-
 @media (min-width: 650px) {
-    .packages{ 
+  .packages {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin-top: 8rem;
-    }
   }
-  
+  .heading-packages {
+    grid-column: 1/-1;
+  }
+}
