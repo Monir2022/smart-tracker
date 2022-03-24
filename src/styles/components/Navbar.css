@@ -1,0 +1,18 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaf2f2;
+    color: black;
+  }
+
+  .logo-img {
+       
+    margin: 1rem; 
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+  }

@@ -1,22 +1,22 @@
-//NPM packages
+import React, { useContext }  from 'react';
+import { LanContext } from "../contexts/LanContext";
 import { Link } from "react-router-dom";
 //Project file
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.png";
+
+import Language from './Language';
 
 export default function Navbar() {
+  const {lan} = useContext(LanContext);
+
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Link className="logo" to="/">
         <img className="logo-img" src={logo} alt="logo thumbnail" />
       </Link>
-      <ul className="navbar-link">
-        <li>
-          <Link to="/Homepage">Home</Link>
-        </li>
-        <li>
-          <Link to="/track">Track</Link>
-        </li>
-      </ul>
-    </div>
+      <Link to="/">{lan.Home}</Link>
+      <Link to="/track">{lan.Track}</Link>
+      <Language />
+    </nav>
   );
 }

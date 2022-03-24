@@ -1,0 +1,15 @@
+
+/*base*/
+
+@import "./base/layout.css";
+@import "./base/typography.css";
+
+
+/* Components*/
+@import "./components/Navbar.css";
+@import "./components/Footer.css";
+
+
+/*Pages*/
+
+@import "./pages/home.css"
