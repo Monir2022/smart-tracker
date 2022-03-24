@@ -1,0 +1,15 @@
+.packages {
+    
+    
+}
+
+
+@media (min-width: 650px) {
+    .packages{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 8rem;
+    }
+  }
+  

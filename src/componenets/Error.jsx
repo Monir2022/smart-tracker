@@ -1,16 +1,10 @@
-//NPM packages
-import React  from 'react';
-
-
 export default function Error() {
-    const parcelError= ( <div>
-        <h1>Something Wrong!!!!
-        </h1>
-    </div>)
-     
+  //Properties
+  const parcelError = (
+    <div>
+      <p>Something Wrong!!!!</p>
+    </div>
+  );
 
-  return ( <div>
-            {parcelError}
-           </div>
-         )
+  return <div>{parcelError}</div>;
 }

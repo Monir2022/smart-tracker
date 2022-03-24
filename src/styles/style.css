@@ -1,15 +1,13 @@
-
 /*base*/
-
 @import "./base/layout.css";
 @import "./base/typography.css";
-
 
 /* Components*/
 @import "./components/Navbar.css";
 @import "./components/Footer.css";
-
+@import "./components/Packages.css";
+@import "./components/ParcelCard.css";
 
 /*Pages*/
-
-@import "./pages/home.css"
+@import "./pages/home.css";
+@import "./pages/track.css";

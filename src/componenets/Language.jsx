@@ -11,7 +11,7 @@ export default function Language() {
         return <option key={option} value={option}>{option}</option>
         })
 
-    const handleSelect = (e) => changeLanguage(e.target.value)
+    const handleSelect = (event) => changeLanguage(event.target.value)
     
 
   return (
