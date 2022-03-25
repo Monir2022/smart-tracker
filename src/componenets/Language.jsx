@@ -1,13 +1,13 @@
 //NPM packages
-import React, { useContext, useState }  from 'react';
-import { LanContext } from "../contexts/LanContext";
+import { useContext, useState }  from 'react';
+import { LanguageContext } from "../state/LanguageContext";
 //Project file
 
 
 export default function Language() {
-    const {lanKey, changeLanguage} = useContext(LanContext);
+    const {languageKey, changeLanguage} = useContext(LanguageContext);
   
-    const lanOptions= lanKey.map(option=>{
+    const languageOptions= languageKey.map(option=>{
         return <option key={option} value={option}>{option}</option>
         })
 
@@ -17,7 +17,7 @@ export default function Language() {
   return (
       <>
       <select onChange={handleSelect} name="cars" id="cars">
-        {lanOptions}
+        {languageOptions}
       </select>
       </>
   );

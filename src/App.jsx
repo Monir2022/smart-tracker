@@ -6,13 +6,13 @@ import Navbar from "./componenets/Navbar";
 import Home from "./pages/Home";
 import Track from "./pages/Track";
 import Footer from "./componenets/Footer";
-import LanContextProvider from "./contexts/LanContext";
+import LanguageContextProvider from "./state/LanguageContext";
 import "./styles/style.css";
 
 export default function App() {
   return (
     <div className="App">
-      <LanContextProvider>
+      <LanguageContextProvider>
         <Router>
           <Navbar />
           <Routes>
@@ -21,7 +21,7 @@ export default function App() {
           </Routes>
           <Footer />
         </Router>
-      </LanContextProvider>
+      </LanguageContextProvider>
     </div>
   );
 }

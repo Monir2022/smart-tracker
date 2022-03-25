@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { LanContext } from "../contexts/LanContext";
+import { useContext } from "react";
+import { LanguageContext } from "../state/LanguageContext";
 import { Link } from "react-router-dom";
 //Project file
 import logo from "../assets/images/logo.png";
@@ -7,7 +7,7 @@ import logo from "../assets/images/logo.png";
 import Language from "./Language";
 
 export default function Navbar() {
-  const { lan } = useContext(LanContext);
+  const { language } = useContext(LanguageContext);
 
   return (
     <nav className="navbar">
@@ -15,10 +15,10 @@ export default function Navbar() {
         <img className="logo-img" src={logo} alt="logo thumbnail" />
       </Link>
       <Link className="links" to="/">
-        {lan.Home}
+        {language.Home}
       </Link>
       <Link className="links" to="/track">
-        {lan.Track}
+        {language.Track}
       </Link>
       <Language />
     </nav>

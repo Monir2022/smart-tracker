@@ -3,11 +3,11 @@ import { useContext, useState, useEffect } from "react";
 import Packages from "../componenets/Packages";
 import Loading from "../componenets/Loading";
 import Error from "../pages/Error";
-import { LanContext } from "../contexts/LanContext";
+import { LanguageContext } from "../state/LanguageContext";
 import { fetchRead } from "../scripts/fetching";
 
 export default function TrackingPage() {
-  const { lan } = useContext(LanContext);
+  const { language } = useContext(LanguageContext);
   
 //local state
   const [status, setStatus] = useState(0);

@@ -1,17 +1,17 @@
 import parcel_img from "../assets/images/parcel.png";
-import { LanContext } from "../contexts/LanContext";
+import { LanguageContext } from "../state/LanguageContext";
 import React, { useContext } from "react";
 
 export default function ParcelCard({ parcel }) {
-  const { lan } = useContext(LanContext);
+  const { language } = useContext(LanguageContext);
   return (
     <div className="parcel-card">
       <img className="card-img" src={parcel_img} alt="parcel" />
       <p>
-       <b>{lan.From}: {parcel.sender}</b> 
+       <b>{language.From}: {parcel.sender}</b> 
       </p>
-      <p>{lan.Parcel_ID}: {parcel.id} </p>
-      <p>{lan.Status}: {parcel.status}</p>
+      <p>{language.Parcel_ID}: {parcel.id} </p>
+      <p>{language.Status}: {parcel.status}</p>
       <p>ETA: {parcel.eta}</p>
     </div>
   );
