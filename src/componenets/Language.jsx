@@ -15,11 +15,10 @@ export default function Language() {
     );
   });
 
-//Method
-function handleSelect(event){
-  changeLanguage(event.target.value)
-}
-  
+  //Method
+  function handleSelect(event) {
+    changeLanguage(event.target.value);
+  }
 
   return (
     <>

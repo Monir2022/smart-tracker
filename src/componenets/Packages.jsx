@@ -5,7 +5,6 @@ import { useContext } from "react";
 import { LanguageContext } from "../state/LanguageContext";
 import ParcelCard from "./ParcelCard";
 
-
 export default function Packages({ parcels }) {
   const { language } = useContext(LanguageContext);
 

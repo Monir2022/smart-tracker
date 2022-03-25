@@ -10,11 +10,11 @@ import { fetchRead } from "../scripts/fetching";
 
 export default function TrackingPage() {
   const { language } = useContext(LanguageContext);
-  
-//local state
+
+  //local state
   const [status, setStatus] = useState(0);
   const [parcels, setParcels] = useState([]);
-//method
+  //method
   useEffect(async () => {
     const payload = await fetchRead();
     setParcels(payload.data);
