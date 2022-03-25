@@ -24,8 +24,8 @@ export default function LanguageContextProvider(props) {
       Parcel_ID: "Paket ID",
       Status: "Status",
       welcome: "Välkommen till Smart Tracker",
-      track_here: "Spår här",
-      package_list: "Här kommer dina paket",
+      track_here: "Spåra här",
+      package_list: "Här är dina paket",
       error_message: "Någonting är fel",
     },
   });
