@@ -1,0 +1,14 @@
+.error {
+  margin-top: 8rem;
+  overflow: hidden;
+}
+
+.error-image {
+    width:60%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.error-text {
+    font-weight:bold;
+}
