@@ -1,3 +1,4 @@
+//NPM packages
 import { createContext, useState } from "react";
 
 export const LanguageContext = createContext();
@@ -13,7 +14,7 @@ export default function LanguageContextProvider(props) {
       welcome: "Welcome to Smart Tracker",
       track_here: "Track Here",
       package_list: "Here are your packages",
-      error_message: "Something went wrong"
+      error_message: "Something went wrong",
     },
 
     SE: {
@@ -25,20 +26,22 @@ export default function LanguageContextProvider(props) {
       welcome: "Välkommen till Smart Tracker",
       track_here: "Spår här",
       package_list: "Här kommer dina paket",
-      error_message: "Någonting är fel"
+      error_message: "Någonting är fel",
     },
-    
   });
-
-  const [languageKey, setLanguageKey] = useState(Object.keys(data));
-
+  //Properties
+  const [languageKey, setlanguageKey] = useState(Object.keys(data));
   const [currentLanguage, setCurrentLan] = useState(languageKey[0]);
 
-  const changeLanguage = (language) => setCurrentLan(language);
+  //Method
+  function changeLanguage(language) {
+    setCurrentLan(language);
+  }
+  //Property
   const values = {
     language: data[currentLanguage],
     languageKey: languageKey,
-    changeLanguage: changeLanguage
+    changeLanguage: changeLanguage,
   };
 
   return (

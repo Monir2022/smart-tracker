@@ -1,7 +1,10 @@
+//NPM packages
 import { Link } from "react-router-dom";
-import homeImage from "../assets/images/home.jpg";
-import React, { useContext } from "react";
+import  { useContext } from "react";
+
+//Project files
 import { LanguageContext } from "../state/LanguageContext";
+import homeImage from "../assets/images/home.jpg";
 
 
 export default function Home() {

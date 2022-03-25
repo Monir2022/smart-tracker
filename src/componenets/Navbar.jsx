@@ -1,9 +1,10 @@
+//NPM Packages
 import { useContext } from "react";
-import { LanguageContext } from "../state/LanguageContext";
 import { Link } from "react-router-dom";
+
 //Project file
 import logo from "../assets/images/logo.png";
-
+import { LanguageContext } from "../state/LanguageContext";
 import Language from "./Language";
 
 export default function Navbar() {

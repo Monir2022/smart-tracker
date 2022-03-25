@@ -1,6 +1,9 @@
-import ParcelCard from "./ParcelCard";
+//NPM packages
 import { useContext } from "react";
+
+//Project files
 import { LanguageContext } from "../state/LanguageContext";
+import ParcelCard from "./ParcelCard";
 
 
 export default function Packages({ parcels }) {

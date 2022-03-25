@@ -1,6 +1,10 @@
-import ErrorImage from "../assets/images/error.jpg";
+//NPM packages
 import { useContext } from "react";
+
+//Project files
+import ErrorImage from "../assets/images/error.jpg";
 import { LanguageContext } from "../state/LanguageContext";
+
 export default function Error() {
   const { language } = useContext(LanguageContext);
   

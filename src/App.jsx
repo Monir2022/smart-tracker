@@ -1,7 +1,7 @@
 //NPM packages
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-//Projects files
 
+//Projects files
 import Navbar from "./componenets/Navbar";
 import Home from "./pages/Home";
 import Track from "./pages/Track";
