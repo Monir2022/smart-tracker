@@ -3,7 +3,7 @@ import { useContext, useState, useEffect } from "react";
 
 //Project files
 import Packages from "../componenets/Packages";
-import Loading from "../componenets/Loading";
+import Loading from "../pages/Loading";
 import Error from "../pages/Error";
 import { LanguageContext } from "../state/LanguageContext";
 import { fetchRead } from "../scripts/fetching";
